@@ -10,9 +10,9 @@ COPY target/ems-backend-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8085
 
 # Define environment variables for the database (optional, if configured in the application.properties/yml)
-ENV SPRING_DATASOURCE_URL=jdbc:mysql://mtl.mysql.database.azure.com:3306/dbOffice?createDatabaseIfNotExist=true
-ENV SPRING_DATASOURCE_USERNAME=mtl
-ENV SPRING_DATASOURCE_PASSWORD=ravi@123
+ENV SPRING_DATASOURCE_URL=jdbc:mysql://dhana.mysql.database.azure.com:3306/dbOffice?createDatabaseIfNotExist=true
+ENV SPRING_DATASOURCE_USERNAME=dhana
+ENV SPRING_DATASOURCE_PASSWORD=Dhanush@123456
 
 # Command to run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
