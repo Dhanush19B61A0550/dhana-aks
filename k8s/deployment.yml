@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: ramyaacr.azurecr.io/45:latest
+        image: pushpaacr.azurecr.io/reload:latest
         ports:
         - containerPort: 8085
