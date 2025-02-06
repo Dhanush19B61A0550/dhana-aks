@@ -29,7 +29,7 @@ jobs:
 
     - name: Log in to ACR
       run: |
-        az acr login --name ramyaacr.azurecr.io
+        az acr login --name pushpaacr.azurecr.io
 
     - name: Build and push Docker image
       run: |
