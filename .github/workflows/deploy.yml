@@ -38,7 +38,7 @@ jobs:
 
     - name: Deploy to AKS
       run: |
-        az aks get-credentials --resource-group dhanaaaa --name DhanaaAksCluster
+        az aks get-credentials --resource-group ramya5 --name ramyaaks
         kubectl apply -f k8s/deployment.yml
         kubectl apply -f k8s/service.yml
         #comment
