@@ -2,7 +2,7 @@ package com.accesshr.emsbackend.response;
 
 import lombok.Data;
 
-@Data
+//@Data
 public class LoginResponse {
 
     private String message;
@@ -34,5 +34,37 @@ public class LoginResponse {
                 ", role='" + role + '\'' +
                 ", token='" + token + '\'' +
                 '}';
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 }

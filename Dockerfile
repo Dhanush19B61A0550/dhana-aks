@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM openjdk:23-jdk-slim
 
 # Set the working directory inside the container
 WORKDIR /app

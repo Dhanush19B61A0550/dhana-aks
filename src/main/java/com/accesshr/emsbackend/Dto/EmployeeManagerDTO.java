@@ -1,6 +1,10 @@
 package com.accesshr.emsbackend.Dto;
 
+import lombok.Getter;
+
+//@Getter
 public class EmployeeManagerDTO {
+    // Getters and setters
     private String firstName;
     private String lastName;
     private String email;
@@ -18,13 +22,13 @@ public class EmployeeManagerDTO {
     private String role;
     private String password;
 
+    // Getters and setters for document fields
     // Document file paths or names
     private String nationalCard;            // Updated field name
     private String tenthCertificate;        // Updated field name
     private String twelfthCertificate;      // Updated field name
     private String graduationCertificate;   // Updated field name
 
-    // Getters and setters
     public String getFirstName() {
         return firstName;
     }
@@ -97,18 +101,16 @@ public class EmployeeManagerDTO {
         this.companyName = companyName;
     }
 
-
-
-    public String getCorporateEmail() {
-        return corporateEmail;
-    }
-
     public String getEmployeeId() {
         return employeeId;
     }
 
     public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
+    }
+
+    public String getCorporateEmail() {
+        return corporateEmail;
     }
 
     public void setCorporateEmail(String corporateEmail) {
@@ -155,7 +157,6 @@ public class EmployeeManagerDTO {
         this.password = password;
     }
 
-    // Getters and setters for document fields
     public String getNationalCard() {
         return nationalCard;
     }
